@@ -3,13 +3,10 @@ import os
 import codecs
 
 def vulnerable(host, port=443):
-    r = os.system("nmap --script ssl-enum-ciphers -p %d %s | grep 'SSLv3: No supported ciphers found' > /dev/null" % (port, host))
-    if not r:
+    r = os.system("echo 'GET /\n\n' | openssl s_client -connect %s:%d -ssl3 2>&1 | grep 'DONE' > /dev/null" % (host, port))
+    if r:
         return False
-    r = os.system("nmap --script ssl-enum-ciphers -p %d %s | grep 'SSLv3' > /dev/null" % (port, host))
-    if not r:
-        return True
-    return False
+    return True
 
 def sanitize_host(host):
     safe_host = host
