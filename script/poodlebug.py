@@ -28,6 +28,7 @@ pt_bank_list = [
     'www.bigonline.pt',
     'caonline.credito-agricola.pt',
     'www.be.grupobanif.pt',
+    'www.bancobest.pt',
 ]
 
 pt_state_list = [
