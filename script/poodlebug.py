@@ -62,9 +62,10 @@ if __name__ == "__main__":
         key = d.keys()[0]
         value = d.values()[0]
         css_class = "error" if value else "success"
+        icon = "fa-times" if value else "fa-check"
         output += u"""<div class="ink-alert basic %s" role="alert">
-                        <i class="fa fa-times"></i> %s - <b>%s</b>
-                      </div>""" % (css_class, key, u"Vulnerável" if value else u"Não vulnerável")
+                        <i class="fa %s"></i> %s - <b>%s</b>
+                      </div>""" % (css_class, icon, key, u"Vulnerável" if value else u"Não vulnerável")
     f = codecs.open('index.html', 'w', 'utf-8')
     t1 = codecs.open('template1.html', 'r', 'utf-8').read()
     t2 = codecs.open('template2.html', 'r', 'utf-8').read()
