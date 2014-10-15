@@ -1,0 +1,50 @@
+ </div>
+
+ <hr>
+
+        <h1 class="slab">FAQ - Perguntas frequentes</h1>
+        <h2 class="slab">O que é o Poodle?</h2>
+        <p>Poodle é uma vulnerabilidade de segurança inerente ao protocolo SSLv3 que é usado esconder (cifrar) ligações na web. O protocolo tem sido regularmente substituído pela família TLS que é suportada em praticamente todos os browsers.</p>
+
+        <h2 class="slab">Como me posso proteger?</h2>
+        <p>Depende do browser que usar:</p>
+        <dl>
+            <dd>Firefox</dd>
+            <dt>Instalar o extra disponível em <a href="https://addons.mozilla.org/en-US/firefox/addon/ssl-version-control/">https://addons.mozilla.org/en-US/firefox/addon/ssl-version-control/</a>.</dt>
+            <dd>Chrome</dd>
+            <dt>Lançar o Chrome da linha de comando com a opção <tt>--ssl-version-min=tls1</tt>.</dt>
+            <dd>Internet Explorer</dd>
+            <dt>Setting -> Internet Options -> Advanced Tab -> Uncheck "SSLv3" under "Security".</dt>
+            <dd>Opera</dd>
+            <dt>Por omissão já está corrigido, mas para alguns utilizadores pode ser necessário desligar os protocolos de segurança SSL 2 e SSL 3 em Preferências -> Avançadas -> Segurança -> Protocolos de Segurança.</dt>
+            <dd>Safari</dd>
+            <dt>Não há ainda solução conhecida, recomendamos o uso de outros browsers entretanto.</dt>
+        </dl>
+        <p>Pode testar se está vulnerável em <a href="https://www.poodletest.com/">https://www.poodletest.com/</a></p>
+
+        <h2 class="slab">Como posso proteger os meus clientes/utilizadores?</h2>
+        <p>Desligue o suporte SSLv3 nos seus servidores. Recomendamos a adopção das configurações de TLS da equipa de segurança da Mozilla: <a href="https://wiki.mozilla.org/Security/Server_Side_TLS">https://wiki.mozilla.org/Security/Server_Side_TLS</a>.</p>
+        <p>Pode testar se o seu servidor permite ligações vulneráveis em <a href="https://www.poodlebleed.com/">https://www.poodlebleed.com/</a></p>
+
+        <h2 class="slab">Como foi construída esta lista?</h2>
+        <p>Esta lista inclui sítios web de serviços de homebanking (onde uma intercepção de dados pode resultar na perda de dinheiro) e sítios da administração pública que os cidadãos são legalmente obrigados a usar. Se falhámos algum caso, envie-nos para <a href="mailto:info@omeugoverno.net">info@omeugoverno.net</a></p>
+
+        <h2 class="slab">Onde posso obter mais informação?</h2>
+        <p>Nesta altura do campeonato a informação apenas está disponível em Inglês:</p>
+        <ul>
+            <li><a href="https://isc.sans.edu/forums/diary/OpenSSL+SSLv3+POODLE+Vulnerability+Official+Release/18827">ISC Diary</a></li>
+            <li><a href="http://googleonlinesecurity.blogspot.com/2014/10/this-poodle-bites-exploiting-ssl-30.html">Google Advisory</a></li>
+            <li><a href="https://www.openssl.org/~bodo/ssl-poodle.pdf">OpenSSL Advisory</a></li>
+            <li><a href="https://technet.microsoft.com/en-us/library/security/3009008.aspx">Microsoft Advisory</a></li>
+        </ul>
+
+        <p>Este site foi um micro-projecto de <a href="https://twitter.com/jneves">@jneves</a></p>
+
+        <p>O meu obrigado às várias pessoas que ajudaram a construir este site, em particular: <a href="https://twitter.com/sh4na">@sh4na</a>, <a href="https://twitter.com/smpb">@smpb</a>, <a href="https://twitter.com/luisfcorreia">@luisfcorreia</a>, <a href="https://twitter.com/be_rasp">@be_rasp</a>, <a href="https://twitter.com/nosuchuser">@nosuchuser</a>  e <a href="https://twitter.com/rcarmo">@rcarmo</a>.</p>
+
+        <footer>
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Este obra está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons - Atribuição-Partilha nos termos da mesma licença 4.0 Internacional</a>.<p>
+        </footer>
+    </body>
+    
+</html>
