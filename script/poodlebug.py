@@ -29,6 +29,8 @@ pt_bank_list = [
     'www.bpinet.pt',
     'www.barclays.pt',
     'www.bigonline.pt',
+    'caonline.credito-agricola.pt',
+    'www.be.grupobanif.pt',
 ]
 
 pt_state_list = [
