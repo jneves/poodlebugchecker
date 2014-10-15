@@ -27,6 +27,8 @@ pt_bank_list = [
     'bes-sec.bes.pt',
     'www.activobank.pt',
     'www.bpinet.pt',
+    'www.barclays.pt',
+    'www.bigonline.pt',
 ]
 
 pt_state_list = [
