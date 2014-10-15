@@ -34,6 +34,7 @@ pt_state_list = [
     'www.seg-social.pt',
     'www.portaldasfinancas.gov.pt',
     'dri2.seg-social.pt',
+    'www.viactt.pt',
 ]
 
 lists = [
