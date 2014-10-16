@@ -29,6 +29,7 @@ pt_bank_list = [
     'caonline.credito-agricola.pt',
     'www.be.grupobanif.pt',
     'www.bancobest.pt',
+    'www.mbnet.pt',
 ]
 
 pt_state_list = [
