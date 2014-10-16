@@ -35,7 +35,7 @@ pt_bank_list = [
     'www.particulares.santandertotta.pt',
     'www.particulares.atlantico.eu',
     'www.bancobest.pt',
-    'areareservada.caixabi.pt'
+    'areareservada.caixabi.pt',
     'caixadirectaonline.cgd.pt',
     'net24.montepio.pt',
     # Crédito Agrícola
