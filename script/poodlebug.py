@@ -17,18 +17,32 @@ def sanitize_host(host):
     return safe_host, port
 
 pt_bank_list = [
+    # Bancos
+    'www.activobank.pt',
+    'emp.bancobaieuropa.pt',
+    'priv.bancobaieuropa.pt',
+    'www.be.grupobanif.pt',
+    'homebanking.bancobic.pt',
+    'www.bbva.pt',
+    'connexis.bnpparibas.com',
+    'www.bpinet.pt',
+    'ind.millenniumbcp.pt',
+    'www.bigonline.pt',
+    'bes-sec.bes.pt',
+    'www.bancoinvest.pt',
+    'www.bancocarregosa.com',
+    'www2.bancopopular.pt',
+    'www.particulares.santandertotta.pt',
+    'www.particulares.atlantico.eu',
+    'www.bancobest.pt',
+    'areareservada.caixabi.pt'
     'caixadirectaonline.cgd.pt',
     'net24.montepio.pt',
-    'www.particulares.santandertotta.pt',
-    'ind.millenniumbcp.pt',
-    'bes-sec.bes.pt',
-    'www.activobank.pt',
-    'www.bpinet.pt',
-    'www.barclays.pt',
-    'www.bigonline.pt',
+    # Crédito Agrícola
     'caonline.credito-agricola.pt',
-    'www.be.grupobanif.pt',
-    'www.bancobest.pt',
+    # Subsidiárias
+    'www.barclays.pt',
+    # Outros serviços
     'www.mbnet.pt',
 ]
 
