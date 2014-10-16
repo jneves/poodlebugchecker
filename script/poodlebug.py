@@ -41,7 +41,12 @@ pt_bank_list = [
     # Crédito Agrícola
     'caonline.credito-agricola.pt',
     # Subsidiárias
+    'europa.bb.com.br',
     'www.barclays.pt',
+    'lu-directnet.credit-suisse.com',
+    'dafbanking.deutsche-bank.pt',
+    'bancaelectronica.abanca.pt',
+    'zonasegura.uci.com',
     # Outros serviços
     'www.mbnet.pt',
 ]
