@@ -26,6 +26,7 @@ pt_bank_list = [
     'www.bbva.pt',
     'connexis.bnpparibas.com',
     'www.bpinet.pt',
+    'www.bpinetempresas.pt',
     'ind.millenniumbcp.pt',
     'www.bigonline.pt',
     'bes-sec.bes.pt',
