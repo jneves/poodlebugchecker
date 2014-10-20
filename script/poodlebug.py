@@ -48,6 +48,8 @@ pt_bank_list = [
     'dafbanking.deutsche-bank.pt',
     'bancaelectronica.abanca.pt',
     'zonasegura.uci.com',
+    # Desconhecido
+    'p24.privatbank.lv',
     # Outros serviços
     'www.mbnet.pt',
 ]
