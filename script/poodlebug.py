@@ -84,7 +84,6 @@ def generate_report():
 if __name__ == "__main__":
     res = generate_report()
     output = u''
-    print(res)
     for d in res:
         key = d.keys()[0]
         value = d.values()[0]
