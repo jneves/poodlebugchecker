@@ -1,12 +1,17 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 import os
 import codecs
 
 def vulnerable(host, port=443):
+    res = []
     r = os.system("echo 'GET /\n\n' | openssl s_client -connect %s:%d -ssl3 2>&1 | grep 'DONE' > /dev/null" % (host, port))
-    if r:
-        return False
-    return True
+    if not r:
+        res.append('POODLE')
+    r = os.system("echo 'GET /\n\n' | openssl s_client -connect %s:%d -cipher EXPORT 2>&1 | grep 'DONE' > /dev/null" % (host, port))
+    if not r:
+        res.append('FREAK')
+    return res
 
 def sanitize_host(host):
     safe_host = host
@@ -71,17 +76,15 @@ def generate_report():
     for host_list in lists:
         for hostname in host_list:
             host, port = sanitize_host(hostname)
-            if vulnerable(host, port):
-                r = True
-            else:
-                r = False
-            res.append({hostname: r})
+            vulns = vulnerable(host, port)
+            res.append({hostname: vulns})
     return res
 
 
 if __name__ == "__main__":
     res = generate_report()
     output = u''
+    print(res)
     for d in res:
         key = d.keys()[0]
         value = d.values()[0]
@@ -89,7 +92,7 @@ if __name__ == "__main__":
         icon = "fa-times" if value else "fa-check"
         output += u"""<div class="ink-alert basic %s" role="alert">
                         <i class="fa %s"></i> %s - <b>%s</b>
-                      </div>""" % (css_class, icon, key, u"Vulnerável" if value else u"Não vulnerável")
+                      </div>""" % (css_class, icon, key, u"Vulnerável (" + u", ".join(value) + ")" if value else u"Não vulnerável")
     f = codecs.open('index.html', 'w', 'utf-8')
     t1 = codecs.open('template1.html', 'r', 'utf-8').read()
     t2 = codecs.open('template2.html', 'r', 'utf-8').read()
